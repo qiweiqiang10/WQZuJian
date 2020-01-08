@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'WQZuJian_Example' do
+  pod 'WQZuJian', :path => '../'
+
+  target 'WQZuJian_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
